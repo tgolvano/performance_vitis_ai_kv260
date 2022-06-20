@@ -53,7 +53,7 @@ do
       rm -f tmp
 
       # generates a file with all the relevant data generated
-      echo -n {\"type\": \"$type\", \"model\": \"$model\", \"threads\": \"$threads\", >> $base/performance_results.json
+      echo -n {\"type\": \"$type\", \"model\": \"$model\", \"threads\": \"$threads\", >> $base/performance_results.jsonl
       echo \"fps\": $fps, \"e2e\": $e2e, \"dpu\": $dpu} >> $base/performance_results.json
     done
   done
